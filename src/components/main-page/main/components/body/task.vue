@@ -1,7 +1,7 @@
 <template>
-  <div >
+  <div>
+    <b-checkbox class="d-inline-block" v-model="data.completed" />
     <b-link href="#" @click="$emit('choose-task', data._id)">
-      <b-checkbox class="d-inline-block" v-model="data.completed" />
       <span class="d-inline-block">{{ data.title }}</span>
     </b-link>
     <b-link class="text-danger" @click="$emit('delete-task', data._id)">

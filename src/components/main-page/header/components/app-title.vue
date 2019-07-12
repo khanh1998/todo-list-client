@@ -1,5 +1,5 @@
 <template>
-  <b-navbar-brand href="#">
+  <b-navbar-brand href="/">
     <slot></slot>
   </b-navbar-brand>
 </template>

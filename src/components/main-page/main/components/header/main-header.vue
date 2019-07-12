@@ -8,6 +8,9 @@
       nullable="true"
       @input="$emit('input-description', $event)"
     />
+    <b-button @click="$emit('remove-todo-list')">
+      <font-awesome-icon icon="trash" />
+    </b-button>
   </b-navbar>
 </template>
 <script>

@@ -3,7 +3,7 @@
     <sidebar-toggle-button/>
     <app-title><slot></slot></app-title>
     <search-box/>
-    <user-avatar />
+    <user-avatar/>
   </b-navbar>
 </template>
 

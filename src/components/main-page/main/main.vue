@@ -4,6 +4,7 @@
       v-bind:value="value"
       v-on:input="handleTitleEdit($event)"
       v-on:input-description="handleDescriptionEdit($event)"
+      v-on:remove-todo-list="$emit('remove-todo-list')"
     />
 
     <MainBody
@@ -27,12 +28,12 @@ export default {
   props: ['value'],
   methods: {
     handleTitleEdit(title) {
-      this.value.name = title;
-      this.$emit('input', this.value);
+      this.$props.value.name = title;
+      this.$emit('input', this.$props.value);
     },
     handleDescriptionEdit(description) {
-      this.value.description = description;
-      this.$emit('input', this.value);
+      this.$props.value.description = description;
+      this.$emit('input', this.$props.value);
     }
   }
 };
